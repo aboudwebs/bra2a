@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#05070f">
-<title>عيد ميلاد سعيد يا براءة</title>
+<title>عيد ميلاد سعيد بروئتي </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -81,7 +81,7 @@ function burst(){const x=R(W*.15,W*.85),y=R(H*.08,H*.38),c=['255,208,110','255,1
 function mkc(init){return{x:R(0,W),y:init?R(-H,0):-10,vx:R(-20,20),vy:R(70,160),a:R(0,6.3),va:R(-5,5),w:R(5,9),h:R(8,14),c:['#e6c36a','#f6edd9','#f2a7a0','#9db8ff'][Math.random()*4|0]}}
 function party(){go('party');say('كل عام وإنتِ بخير','عيد ميلاد سعيد',CFG.name,'كل سنة بتمرّ وإنتِ فيها\nبتصير أحلى من يلي قبلها');bloom=1;for(let i=0;i<(RM?40:150);i++)conf.push(mkc(true));burst();burst();setTimeout(()=>{if(S==='party')showBtn('كمّلي، في شي كمان')},7000)}
 function step(s){[0,
-  ()=>say('25 آب 2022','أول مرة شفتك','وبهاد اليوم حبّينا بعض.'),
+  ()=>say('25 آب 2022','أول مرة عرفتك','وبهاد اليوم حبّينا بعض.'),
   ()=>say('8 تشرين التاني 2026','أول مرة تقابلنا','بعد أكتر من 4 سنين، الحلم صار حقيقة.'),
   ()=>{say('وهلأ','2027','داخلين عليها سوا، وإيدك بإيدي.');burst()},
   ()=>{say('صرلنا سوا','','','وهاد بس أول الحكاية.',1);setTimeout(()=>{if(S==='jr')showBtn('من الأول')},3500)}][s]()}
