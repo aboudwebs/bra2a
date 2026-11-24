@@ -49,7 +49,7 @@ canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
   <button id="btn" class="off" type="button"></button>
 </div>
 <script>
-const CFG={name:"براءة",hold:2.4};
+const CFG={name:"بروئتي",hold:2.4};
 const $=i=>document.getElementById(i),cv=$('c'),ctx=cv.getContext('2d'),btn=$('btn'),L=[$('l1'),$('l2'),$('l3'),$('l4')],CN=$('cn'),HM=$('hms');
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let W,H,S='intro',T0=0,hold=0,holding=false,rise=0,dark=0,bloom=0,fwT=0,js=0,jp=0,shT=4;
@@ -84,7 +84,7 @@ function step(s){[0,
   ()=>say('25 آب 2022','أول مرة عرفتك','وبهاد اليوم حبّينا بعض.'),
   ()=>say('8 تشرين التاني 2026','أول مرة تقابلنا','بعد أكتر من 4 سنين، الحلم صار حقيقة.'),
   ()=>{say('وهلأ','2027','داخلين عليها سوا، وإيدك بإيدي.');burst()},
-  ()=>{say('صرلنا سوا','','','وهاد بس أول الحكاية.',1);setTimeout(()=>{if(S==='jr')showBtn('من الأول')},3500)}][s]()}
+  ()=>{say('صرلنا سوا','','','وهي بس أول الحكاية.',1);setTimeout(()=>{if(S==='jr')showBtn('من الأول')},3500)}][s]()}
 function tick(){const n=new Date();let y=n.getFullYear()-2022,m=n.getMonth()-7,d=n.getDate()-25;if(d<0){m--;d+=new Date(n.getFullYear(),n.getMonth(),0).getDate()}if(m<0){y--;m+=12}
   $('cy').textContent=y;$('cm').textContent=m;$('cd').textContent=d;HM.textContent='و '+n.getHours()+' ساعة و '+n.getMinutes()+' دقيقة و '+n.getSeconds()+' ثانية'}
 function update(t,dt){
